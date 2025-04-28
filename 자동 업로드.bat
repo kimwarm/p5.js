@@ -1,3 +1,5 @@
+@echo off
+set /p commitMessage=커밋 메시지를 입력하세요: 
 git add .
-git commit -m "커밋 메시지"
+git commit -m "%commitMessage%"
 git push origin main
